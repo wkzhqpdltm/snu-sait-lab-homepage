@@ -81,6 +81,10 @@ h1, h2 {
   text-align: center;
   padding: 1rem;
   transition: transform 0.3s;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .student-card:hover {
@@ -93,6 +97,12 @@ h1, h2 {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 0.5rem;
+}
+
+.student-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  min-height: 2.5rem;
 }
 
 .hero {
@@ -110,17 +120,22 @@ h1, h2 {
   margin-bottom: 1rem;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
-  color: #003366;
-  margin: 0.5rem 0;
+.lab-title {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.hero h2 {
-  font-size: 1.5rem;
+.lab-title h1 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 0.3rem;
+}
+
+.lab-title h2 {
+  font-size: 1.25rem;
   color: #666;
   font-weight: normal;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 @media (max-width: 600px) {
