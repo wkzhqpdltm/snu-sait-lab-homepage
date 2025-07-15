@@ -69,7 +69,8 @@ h1, h2 {
 
 .student-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 240px));
+  justify-content: center; /* 가운데 정렬 */
   gap: 1.5rem;
   margin-top: 1rem;
 }
