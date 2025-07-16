@@ -7,15 +7,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="header-placeholder"></div>
+  <header>
+    <div id="header-placeholder"></div>
 
-  <script>
-    fetch('header.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      });
-  </script>
+    <script>
+      fetch('header.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
+  </header>
+  
   <main>
     <section>
       <h2>Researchers</h2>
