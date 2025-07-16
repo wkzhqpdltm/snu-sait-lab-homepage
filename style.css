@@ -167,8 +167,3 @@ h1, h2 {
   }
 }
 
-@media (max-width: 500px) {
-  .student-grid {
-    grid-template-columns: 1fr; /* 더 작으면 1열 */
-  }
-}
