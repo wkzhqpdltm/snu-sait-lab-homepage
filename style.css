@@ -139,6 +139,15 @@ h1, h2 {
   margin: 0;
 }
 
+.lab-banner-text {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #003366;
+  margin: 12px 0;
+}
+
+
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.5rem;
