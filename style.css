@@ -8,22 +8,8 @@
   --background-color: #f5f7fa;
   --highlight-color: #eaf4fb;
   --text-color: #333;
-  /* Dark theme defaults - these values are overridden when the body has data-theme="dark" */
-  --primary-color-dark: #0a2141;
-  --secondary-color-dark: #88c8ff;
-  --background-color-dark: #121212;
-  --highlight-color-dark: #1e2a3a;
-  --text-color-dark: #e0e0e0;
 }
 
-/* Dark theme override using attribute selector */
-[data-theme='dark'] {
-  --primary-color: var(--primary-color-dark);
-  --secondary-color: var(--secondary-color-dark);
-  --background-color: var(--background-color-dark);
-  --highlight-color: var(--highlight-color-dark);
-  --text-color: var(--text-color-dark);
-}
 
 /* Reset and base styles */
 body {
