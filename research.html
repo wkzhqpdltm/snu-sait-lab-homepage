@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research</title>
+  <meta name="description" content="Explore our recent publications and projects at SNU SAIT." />
+  <title>Research – SNU SAIT</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <div class="nav-top-text">
-      <h1 style="color:white;">Research</h1>
+      <h1>Research</h1>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
     </div>
     <nav>
       <ul class="nav-menu">
@@ -22,11 +25,28 @@
   </header>
   <main>
     <section>
-      <h2>Publications & Projects</h2>
-      <ul>
-        <li></li>
+      <h2>Publications &amp; Projects</h2>
+      <p>Here you can find a selection of our recent publications and ongoing projects. Click on a project to learn more.</p>
+      <ul class="research-list">
+        <li>
+          <details>
+            <summary>Persistent Homology for High-Dimensional Data (2024)</summary>
+            <p>This project investigates efficient algorithms for computing persistent homology in high-dimensional spaces and applies them to real-world datasets.</p>
+            <p><a href="#">Read paper</a></p>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Topological Machine Learning Models (2023–2025)</summary>
+            <p>We explore how topological features can be integrated into machine learning models to improve interpretability and robustness.</p>
+            <p><a href="#">View project page</a></p>
+          </details>
+        </li>
       </ul>
     </section>
   </main>
+  <footer>
+    <p>&copy; 2025 SNU&nbsp;SAIT Lab • Department of Statistics • Seoul National University</p>
+  </footer>
 </body>
 </html>
