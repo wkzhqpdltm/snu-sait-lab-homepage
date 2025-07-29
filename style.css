@@ -10,14 +10,6 @@
   --text-color: #333;
 }
 
-/* Dark theme overrides */
-[data-theme='dark'] {
-  --primary-color: #222;
-  --secondary-color: #4ea1f3;
-  --background-color: #000;
-  --highlight-color: #1a1a1a;
-  --text-color: #f5f5f5;
-}
 
 
 /* Reset and base styles */
@@ -62,15 +54,6 @@ header {
   display: none;
 }
 
-/* Theme toggle button (sun/moon) */
-.theme-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  cursor: pointer;
-}
 
 nav {
   max-width: 900px;
