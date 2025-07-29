@@ -8,6 +8,21 @@
   --background-color: #f5f7fa;
   --highlight-color: #eaf4fb;
   --text-color: #333;
+  /* Dark theme defaults - these values are overridden when the body has data-theme="dark" */
+  --primary-color-dark: #0a2141;
+  --secondary-color-dark: #88c8ff;
+  --background-color-dark: #121212;
+  --highlight-color-dark: #1e2a3a;
+  --text-color-dark: #e0e0e0;
+}
+
+/* Dark theme override using attribute selector */
+[data-theme='dark'] {
+  --primary-color: var(--primary-color-dark);
+  --secondary-color: var(--secondary-color-dark);
+  --background-color: var(--background-color-dark);
+  --highlight-color: var(--highlight-color-dark);
+  --text-color: var(--text-color-dark);
 }
 
 /* Reset and base styles */
@@ -50,6 +65,16 @@ header {
   font-size: 1.75rem;
   cursor: pointer;
   display: none;
+}
+
+/* Theme toggle button (sun/moon) */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
 }
 
 nav {
@@ -159,6 +184,23 @@ h2 {
   background-color: var(--highlight-color);
   border-radius: 1rem;
   margin-top: 1rem;
+}
+
+/* Call-to-action button */
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color);
 }
 
 /* Research list */
